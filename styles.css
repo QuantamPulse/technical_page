@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*
+body {
+    display: flex;
+    flex-direction: row;
+}
+*/
+
+.navpanel {
+    width: 300px;
+    min-width: 200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border-right: solid;
+    border-width: 3px;
+    position: fixed;
+}
+
+.nav-header {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: solid;
+    border-width: 2px;
+}
+
+.nav-header > h1 {
+    font-size: 30px;
+}
+
+.nav-item {
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-panel {
+    padding-left: 330px;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-section > header {
+    padding-top: 30px;
+}
+
+.main-section > p {
+    padding-left: 40px;
+    padding-top: 10px;
+    font-size: 20px;
+    max-width: 700px;
+}
+
+.main-header > h1 {
+    font-size: 35px;
+}
+
+li {
+    margin-left: 80px;
+    padding-top: 5px;
+}
+
+@media (max-width: 650px){
+    .navpanel {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+    }
+    .main-panel {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+}
